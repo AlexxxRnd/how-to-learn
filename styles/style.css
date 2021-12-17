@@ -13,13 +13,8 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background-color: #f2f2f2;
   /* выше установили ограничения для секции */
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -28,4 +23,135 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 99;
+  width: 183px;
+  height: 32px;
+}
+
+.title {
+  display: flex;
+  width: 730px;
+  height: 500px;
+  align-items: center;
+  margin-left: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 500;
+}
+
+.subtitle {
+  position: absolute;
+  width: 388px;
+  left: 64px;
+  bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.main-illustration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.square-pic {
+  position: absolute;
+  right: 0;
+  top: 64px;
+  background: #2f80ed;
+  width: 568px;
+  height: 568px;
+  z-index: 0;
+}
+
+.description {
+  margin-top: 100px;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.brief {
+  width: 175px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.main-text {
+  width: 80%; 
+  min-width: 784px;
+}
+
+.paragraph {
+  margin-bottom: 30px;
+  line-height: 34px;
+  font-size: 24px;
+}
+
+.digits {
+  margin-top: 100px;
+}
+
+.section-title {
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+}
+
+.section-subtitle {
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+}
+
+.digits__table {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px auto 100px auto;
+  width: 1100px;
+}
+
+
+
+
+.feynman {
+  position: absolute;
+  background-image: url(/images/feynman.png);
+}
+
+.feynman__title {
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+}
+
+.feynman__subtitle {
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+}
+
+
+.author {
+  position: absolute;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  left: 64px;
+}
+
+.logo-place-footer {
+  display: flex;
+  width: 183px;
+  height: 32px;
 }
