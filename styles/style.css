@@ -15,6 +15,7 @@
   flex-wrap: wrap;
   margin: 0 auto;
   width: 1100px;
+  list-style: none;
 }
 
 .table__cell {
@@ -137,7 +138,7 @@
 }
 
 .description__main-text {
-  width: 80%; 
+  width: 80%;
   min-width: 784px;
 }
 
