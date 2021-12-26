@@ -13,7 +13,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 auto 100px;
+  margin: 0 auto;
   width: 1100px;
 }
 
@@ -22,16 +22,17 @@
   margin-top: 60px;
 }
 
-.table__cell_heading {
-  margin: 0 auto 20px;
+.table-heading {
+  margin: 0 auto;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 500;
 }
 
-.table__cell_text {
+.table-text {
   line-height: 1.2;
   font-size: 18px;
+  margin: 20px auto 0;
 }
 
 .table__cell_theme_dark {
@@ -55,6 +56,7 @@
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
+  margin-bottom: 100px;
 }
 
 .header__square-pic {
@@ -79,11 +81,10 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
-  margin: 0 0 0 64px;
+  margin: 0 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 500;
-  z-index: 2;
 }
 
 .header__subtitle {
@@ -111,7 +112,6 @@
 
 /*блок description*/
 .description {
-  margin-top: 100px;
   margin-bottom: 100px;
 }
 
@@ -144,7 +144,7 @@
   font-size: 24px;
 }
 
-.description p:last-child {margin-bottom: 0;}
+.description p:last-child {margin-bottom: 0;} /* убираем отступ у посленего абзаца */
 
 .description__span-accent {
   font-weight: 500;
@@ -152,10 +152,10 @@
 
 /*блок digits*/
 .digits {
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .digits__title {
@@ -269,8 +269,8 @@
 .footer__columns {
   display: flex;
   flex-basis: 711px;
+  min-height: 350px;
   width: 90%;
-  height: 350px;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -283,7 +283,11 @@
 }
 
 .column-content-info {
-  margin: 0 auto;
+  padding-bottom: 16px;
+}
+
+.column-content-social {
+  padding-bottom: 16px;
 }
 
 .column-link {
