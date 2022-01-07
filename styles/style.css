@@ -138,6 +138,7 @@
   bottom: 0;
   width: 765px;
   height: 608px;
+  z-index: -1;
 }
 
 .header__link {
@@ -179,7 +180,7 @@
   font-size: 24px;
 }
 
-.description two-columns__paragraph:last-child {margin-bottom: 0;} /* убираем отступ у последнего абзаца */
+.two-columns__paragraph:last-child {margin-bottom: 0;} /* убираем отступ у последнего абзаца */
 
 .two-columns__span-accent {
   font-weight: bold;
@@ -232,12 +233,6 @@
   text-decoration: none;
 }
 
-/*.feynman-illustration {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}*/
-
 /*kaufman*/
 .kaufman {
   position: relative;
@@ -250,6 +245,7 @@
 
 .kaufman__triangle {
   background-image: url("../images/kaufman-triangle.svg");
+  background-size: contain;
   width: 877px;
   height: 877px;
   position: absolute;
